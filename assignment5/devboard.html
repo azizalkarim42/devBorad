@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment5</title>
+   
+<script src="https://cdn.tailwindcss.com"></script>
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class=" mx-36  min-h-screen">
+
+
+
+    <!-- this is reserved for nav bar -->
+  <header>
+    <nav class="bg-[#F4F7FF]">
+            <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1 ">
+
+
+
+    <div class="flex items-center">
+        <img src="/logo.png" alt="">
+        <p class=" text-xl   ">Dev <span class="font-bold">Board</span></p>
+    </div>
+
+
+  </div>
+  <div class="flex">
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost rounded-md">
+        <div class="indicator ">
+           <div class="flex gap-2">
+             <img class="max-w-4 max-h-5 " src="/checkbox.png" alt=""> 
+            <p class="text-center items-center">
+                <span class="navNum" id="navNum">24</span>
+          </p>
+           </div>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+       
+      </div>
+    </div>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+        <div id="" class="w-10 rounded-full">
+          <img id="colorChangeBtn"
+            alt="Tailwind CSS Navbar component"
+            src="/theme-btn.png" />
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+
+
+  
+  </header>
+
+    <!-- main part for html with tailwind and daisyul is going to start here-->
+
+    <main class=" bg-white">
+       <div id="father-div" class="grid  grid-cols-4 "> <!-- by using this one  i divided all into two parts i merged 3 rows and column together -->
+
+
+         <div class="col-span-3 my-6   gap-5">
+          
+          
+          <!-- in this part i will make the bigger section means whole part  of after nav bar which i devided into  -->
+            <div class="grid  grid-cols-4 py-5 rounded-md bg-[#F4F7FF] items-center gap-5 px-5 "> 
+              <!--this is upper part-->
+                <section class="flex gap-5 h-[128px]  rounded-md bg-[#F4F7FF] items-center  justify-center shadow-md ">
+                    <div class="w-10 h-10 bg-white flex rounded-full items-center justify-center  ">
+                        <img class=" max-w-6 max-h-6 object-contain " src="/checkbox.png" alt="">
+                     </div>
+                    <div>
+                        <p>task assigned <br>
+                            <span class="number1" id="number1">6</span></p>
+                    </div>
+                </section>
+                   
+                <section id="discoverBtn" class="col-start-2 col-span-2 flex gap-5 shadow-md bg-blue-500 justify-center h-[128px] items-center  rounded-md ">
+                     <div class=" items-center justify-center  ">
+                        <img class="object-contain " src="/board.png" alt="">
+                     </div>
+                    <div>
+                        <p>Discover something <br>
+                            New Today</p>
+                    </div>
+                </section>
+
+                <section  class="section-box flex rounded-md shadow-md h-[128px] bg-[#F4F7FF] items-center justify-center gap-5 ">
+                    <div class="w-10 h-10 bg-white flex rounded-full items-center justify-center  ">
+                        <img class=" max-w-6 max-h-6 object-contain " src="/calender.png" alt="">
+                     </div>
+
+
+
+
+                   
+
+                    <div>   <!--card and activity section combined-->
+                        <p > <span id="dateDisplay" >wednesday</span> <br>
+                            <span  id="dateDisplay2" >july 28 2025</span></p>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- in this part we will work with card-->  
+              <div class="grid grid-cols-3 gap-5 my-2">
+
+
+              <div class="card2  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Shop Ease</button>
+                <p id="jobSearch1" class="font-semibold text-xl p-2">Fix mobile button issue</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn1" class="bg-blue-600 rounded-md font-bold p-2 ">completed</button>
+                </div>
+              </div>
+           
+
+
+              <div class="card1  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Cloud Sync</button>
+                <p id="jobSearch2"class="font-semibold text-xl p-2">Add dark mode</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn2" class="bg-blue-600 rounded-md disabled:opacity-50  font-bold p-2">completed</button>
+                </div>
+              </div>
+
+
+              <div class="card1  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Swift Pay</button>
+                <p id="jobSearch3" class="font-semibold text-xl p-2">optimize home page</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn3" class="bg-blue-600 rounded-md font-bold p-2">completed</button>
+                </div>
+              </div>
+
+
+              <div class="card1  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Meta</button>
+                <p id="jobSearch4" class="font-semibold text-xl p-2">Add new emoji</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn4" class="bg-blue-600 rounded-md p-2 font-bold">completed</button>
+                </div>
+              </div>
+
+
+              <div class="card1  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Google LLC</button>
+                <p id="jobSearch5" class="font-semibold text-xl p-2">Integrate OpenAI API</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn5" class="bg-blue-600 rounded-md font-bold p-2">completed</button>
+                </div>
+              </div>
+
+              <div class="card1  bg-[#F4F7FF] p-5 rounded-lg">
+                <button class="bg-white shadow-sm rounded-md p-2">Glassdoor</button>
+                <p id="jobSearch6" class="font-semibold text-xl p-2">Improve Job Searching</p>
+                <p class="bg-white p-2 shadow-sm  truncate rounded-md text-sm">Debug using Chrome  DevTools, <br> check for overlapping  elements, and ensure  onClick works properly 
+                    and ensure onClick works  properly</p>
+                <div class="flex justify-between py-2">
+                  <p class="text-sm">deadline <br> 21 mar 2025</p>
+                  <button id="btn6" class="bg-blue-600 rounded-md font-bold p-2">completed</button>
+                </div>
+              </div>
+
+
+
+
+              
+            </div>
+
+
+         </div>
+<!-- this part is reserved for activity -->
+         <div class=" justify-center my-6  bg-[#F4F7FF] ml-5 rounded-md p-2 ">
+          <div class="flex justify-center gap-5">
+            <img src="/activity.png" alt="">
+            <p>activity log</p>
+          </div>
+
+          <div class="justify-center flex  items-center">
+            <button id="clearHistory" class="rounded-md my-3 p-2 bg-blue-600"> Clear History</button>
+          </div>
+<!--this is a combine part of activity but in this part we will work with other ways by using js creat element-->
+           <div id="History" class="bg-[#F4F7FF] p-4 gap-5 my-5">
+          
+         </div>
+
+
+         </div>
+        
+       </div>
+
+    </main>
+    <script src="devBoard.js"></script>
+</body>
+</html>
